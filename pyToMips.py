@@ -1,9 +1,12 @@
 import os
+import sys
 from CharIndex import CharIndex
+
+input_file = './input.py' if len(sys.argv) == 1 else sys.argv[1]
 
 inter_buffer = ''
 
-with open('./input.py', 'r') as input_file:
+with open(input_file, 'r') as input_file:
     inter_buffer = input_file.readlines()
 
 strings = {
